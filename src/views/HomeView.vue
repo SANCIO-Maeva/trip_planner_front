@@ -1,8 +1,9 @@
 <script setup>
+import Prompt from "@/components/Prompt.vue"
+import Historique from "@/components/Historique.vue"
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an about Home</h1>
-  </div>
+    <Prompt></Prompt>
+    <Historique></Historique>
 </template>
