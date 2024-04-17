@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template>
     <h2 class="h6 mt-5">Derniers itinéraire</h2>
-    <div class="row justify-content-center" v-for="trip in trips" :key="item.id">
+    <div class="row justify-content-center" v-for="trip in trips" :key="trip.id">
         <div class="card col-10 mt-2">
             <div class="card-body">
                 {{ trip.prompt }}
