@@ -1,3 +1,32 @@
 body{
-  background-color: wheat;
+  background-color: #2F2E2B;
+  color: white;
+}
+
+/*
+Form
+*/
+.form-control{
+  background-color: #242321;
+  border-radius: 17px;
+  border-color: #958F7E;
+}
+
+/*
+Button
+*/
+.btn{
+  color: #CECECE;
+}
+.btn-secondary{
+  background-color: #958F7E;
+  border-color: #958F7E;
+}
+.btn-outline-secondary{
+  border-color: #958F7E;
+}
+
+.card{
+  color: white;
+  background-color: #242321;
 }
