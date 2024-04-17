@@ -2,6 +2,9 @@ body{
   background-color: #2F2E2B;
   color: white;
 }
+.logo{
+  width: 20vw;
+}
 
 /*
 Form
@@ -23,10 +26,15 @@ Button
   border-color: #958F7E;
 }
 .btn-outline-secondary{
+  margin-left: 10px;
   border-color: #958F7E;
 }
 
+/*
+Card
+*/
 .card{
+  font-size: 13px;
   color: white;
   background-color: #242321;
 }
