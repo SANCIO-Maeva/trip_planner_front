@@ -1,11 +1,9 @@
 <script setup>
 import Prompt from "@/components/Prompt.vue"
-import Itinerary from "@/components/Itinerary.vue"
+import History from "@/components/History.vue"
 </script>
 
 <template>
-    <h1 class="text-center">Planificateur de voyage</h1>
-    <h2 class="h5 text-center">généré par IA</h2>
     <Prompt></Prompt>
-    <Itinerary></Itinerary>
+    <History></History>
 </template>
