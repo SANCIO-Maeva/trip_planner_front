@@ -7,7 +7,7 @@ const fetchTrips = async () => {
     const response = await fetch("http://localhost:3000/v1/trips");
     const data = await response.json();
     trips.value = data;
-    console.log(data);
+    // console.log(data);
 };
 
 onMounted(() => {
