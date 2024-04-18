@@ -1,5 +1,4 @@
 import instance from "./api.js";
-
 class Trips{
 
     async create(prompt, output, createdAt, updatedAt) {
