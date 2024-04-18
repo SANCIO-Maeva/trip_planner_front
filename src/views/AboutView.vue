@@ -1,9 +1,9 @@
 <script setup>
-import Leaflet from "@/components/Leaflet.vue"
-import Itinerary from "@/components/Itinerary.vue"
+import Map from "@/components/Map.vue"
+import ItineraryList from "@/components/ItineraryList.vue"
 </script>
 
 <template>
-    <Leaflet></Leaflet>
-    <Itinerary></Itinerary>
+    <Map></Map>
+    <ItineraryList></ItineraryList>
 </template>
