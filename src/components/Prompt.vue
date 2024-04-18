@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from "vue";
 import tripsInstance from "@/services/trip.js";
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 const trips = ref({
     prompt: "",
     output: "",
@@ -9,8 +11,9 @@ const trips = ref({
     updatedAt: "",
 });
 
-async function createPrompt() {
-  console.log(trips.value);
+
+const createPrompt =async () => {
+    console.log(trips.value);
 
   let data = await tripsInstance.create(
     trips.value.prompt,
@@ -18,7 +21,12 @@ async function createPrompt() {
     trips.value.createdAt,
     trips.value.updatedAt,
   );
+  trips.value = data;
+  const tripId = data.id;
+  console.log(tripId)
+  router.push({ name: 'about', params: { id: tripId } });
 }
+
 </script>
 
 
@@ -31,7 +39,7 @@ async function createPrompt() {
         </div>
         <div class="col-8">
             <div class="mb-2">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" v-model="trips.prompt"></textarea>
+                <textarea rows="5" v-model="trips.prompt"></textarea>
             </div>
             <div class="mt-5 text-center">
                 <button type="button" class="btn btn-secondary btn-sm" @click="createPrompt">C'est parti</button>
