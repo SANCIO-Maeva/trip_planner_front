@@ -4,6 +4,7 @@
   font-family: 'Inter';
   src:url('./fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype'); 
 }
+
 body{
   background-color: #2F2E2B;
   color: white;
@@ -29,7 +30,8 @@ section{
 /*
 Form
 */
-.form-control{
+textarea{
+  width: 60vw;
   background-color: #242321;
   border-radius: 1rem;
   border-color: #958F7E;
