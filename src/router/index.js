@@ -12,7 +12,7 @@ const router = createRouter({
       component: PromptView
     },
     {
-      path: '/about',
+      path: '/about/:id',
       name: 'about',
       component: AboutView
 
