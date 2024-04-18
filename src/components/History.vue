@@ -16,13 +16,15 @@ onMounted(() => {
 </script>
 
 <template>
-    <h2 class="h6 mt-5">Derniers itinéraire</h2>
-    <div class="row justify-content-center" v-for="trip in trips" :key="trip.id">
-        <div class="card col-10 mt-2">
-            <div class="card-body">
-                {{ trip.prompt }}
-            <i class="bi bi-chevron-right"></i>
+    <section>
+        <h2 class="h6 mt-5">Derniers itinéraire</h2>
+        <div class="row justify-content-center" v-for="trip in trips" :key="trip.id">
+            <div class="card col-10 mt-2">
+                <div class="card-body">
+                    {{ trip.prompt }}
+                <i class="bi bi-chevron-right"></i>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
