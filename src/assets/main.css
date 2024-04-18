@@ -1,11 +1,33 @@
+@font-face {
+  font-family: 'Lora';
+  src:url('./fonts/Lora-VariableFont_wght.ttf') format('truetype'); 
+  font-family: 'Inter';
+  src:url('./fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype'); 
+}
 body{
   background-color: #2F2E2B;
   color: white;
+  font-family: 'Inter',sans-serif;
+}
+h1{ 
+  font-family:'Lora';
+  font-size:2rem;
 }
 .logo{
-  width: 20vw;
+  width: 16vw;
 }
-
+.h6{
+  color: #958F7E;
+}
+p{
+  color: #CECECE;
+}
+h2 .h6{
+  margin-left: 3vh;
+}
+section{
+  margin-left: 1vh;
+}
 /*
 Form
 */
@@ -23,12 +45,12 @@ Button
   color: #CECECE;
 }
 .btn-secondary{
-  background-color: #958F7E;
-  border-color: #958F7E;
+  background-color: #6D695E;
+  border-color: #6D695E;
 }
 .btn-outline-secondary{
   margin-left: 10px;
-  border-color: #958F7E;
+  border-color: #6D695E;
 }
 
 /*
@@ -47,7 +69,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 #map {
     position:relative;
     top: 0;
