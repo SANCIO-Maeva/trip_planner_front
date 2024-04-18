@@ -8,6 +8,7 @@ class Trips{
           createdAt: createdAt,
           updatedAt: updatedAt,
         });
+        console.log(response)
         return response.data;
       }
 }
