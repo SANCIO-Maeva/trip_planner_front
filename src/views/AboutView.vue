@@ -16,10 +16,7 @@ onMounted(async () => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     trip.value = await response.json();
 
-    const map = L.map('map', {
-      center: L.latLng(55.665957, 12.550343),
-      zoom: 3,
-    });
+    const map = L.map("map").setView([51, -0.09], 13);
 
     const key = 'B3SpToQTffPiOQxtsGkV';
 
@@ -39,6 +36,9 @@ onMounted(async () => {
         }
       }
     }
+
+    const group = new L.featureGroup(markers.value);
+    map.fitBounds(group.getBounds());
 
   } catch (error) {
     console.error(error);
