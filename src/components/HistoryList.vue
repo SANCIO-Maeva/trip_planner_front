@@ -12,7 +12,6 @@ const fetchTrips = async () => {
     const data = await response.json();
     trips.value = data;
     tripId = data.id;
-    // console.log(data);
 };
 
 const redirection = async (tripId) => {
