@@ -14,7 +14,6 @@ const trips = ref({
 
 
 const createPrompt =async () => {
-    console.log(trips.value);
     isLoading.value = true; 
 
   let data = await tripInstance.create(
