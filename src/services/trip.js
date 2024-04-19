@@ -1,5 +1,5 @@
 import instance from "./api.js";
-class Trips{
+class Trip{
 
     async create(prompt, output, createdAt, updatedAt) {
         const response = await instance.post(`/trips/`, {
@@ -13,8 +13,8 @@ class Trips{
       }
 }
 
-const tripsInstance = new Trips();
-export default tripsInstance;
+const tripInstance = new Trip();
+export default tripInstance;
 
 
   
