@@ -4,6 +4,7 @@ import tripInstance from "@/services/trip.js";
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
+const isLoading = ref(true);
 const trips = ref({
     prompt: "",
     output: "",
@@ -14,6 +15,7 @@ const trips = ref({
 
 const createPrompt =async () => {
     console.log(trips.value);
+    isLoading.value = true; 
 
   let data = await tripInstance.create(
     trips.value.prompt,
@@ -25,12 +27,24 @@ const createPrompt =async () => {
   const tripId = data.id;
   console.log(tripId)
   router.push({ name: 'about', params: { id: tripId } });
+  isLoading.value = false; 
+
 }
 
 </script>
 
 
 <template>
+    <div v-if="isLoading" class="semipolar-spinner-container">
+        <div class="semipolar-spinner">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+        <div class="spinner-text">Chargement...</div>
+    </div>
     <div class="row justify-content-center text-center mt-4">
         <div class="col-6">
             <img class="logo mb-3" src="../assets/Frame.svg" alt="compass">
