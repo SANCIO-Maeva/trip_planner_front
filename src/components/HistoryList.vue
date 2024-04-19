@@ -25,8 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <section>
-        <h2 class="h6 mt-5">Derniers itinéraire</h2>
+        <h3 class="h6 mt-5">Derniers itinéraire</h3>
         <div class="row justify-content-center" v-for="trip in trips" :key="trip.id">
             <div class="card col-10 mt-2" @click="redirection(trip.id)">
                 <div class="card-body">
@@ -35,5 +34,4 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-    </section>
 </template>

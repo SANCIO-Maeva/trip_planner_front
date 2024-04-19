@@ -20,9 +20,10 @@ const props = defineProps({
             <ol class="list-group-numbered">
                 <li class="list-group-item d-flex justify-content-between align-items-start" v-for="location in props.trip.output" :key="location.id">
                     <div class="ms-2 me-auto">
-                        <div class="fw-bold">{{ location.name }}</div>
+                        <div class="fw-bold">
+                            <h2 class="h6 name">{{ location.name }}</h2>
+                        </div>
                         <p>{{ location.description }}</p>
-                        <p>{{ location.location }}</p>
                     </div>
                 </li>
             </ol>
