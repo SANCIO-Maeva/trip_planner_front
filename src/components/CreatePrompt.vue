@@ -4,7 +4,7 @@ import tripInstance from "@/services/trip.js";
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-const isLoading = ref(true);
+const isLoading = ref(false);
 const trips = ref({
     prompt: "",
     output: "",
