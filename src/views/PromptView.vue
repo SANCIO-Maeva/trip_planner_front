@@ -1,9 +1,9 @@
 <script setup>
-import Prompt from "@/components/Prompt.vue"
+import CreatePrompt from "@/components/CreatePrompt.vue"
 import HistoryList from "@/components/HistoryList.vue"
 </script>
 
 <template>
-    <Prompt></Prompt>
-    <HistoryList></HistoryList>
+    <CreatePrompt/>
+    <HistoryList/>
 </template>
